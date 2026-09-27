@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Momina Khan — Graphic Designer</title>
+<meta name="description" content="Momina Khan — graphic designer portfolio: branding, packaging, retail and social creative.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f1e8;--paper:#f7f1e8;--ink:#2a1833;--muted:#786b78;--line:#d9cbdc;--acid:#8d4bd4;--red:#c75a91;--lav:#e9d9f5;--plum:#4b245e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,Arial,sans-serif;overflow-x:hidden}body.modal-open{overflow:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit;border:0;color:inherit;background:none;cursor:pointer}
+::selection{background:var(--acid);color:#fff}
+.noise{position:fixed;inset:-50%;z-index:100;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.cursor,.cursor-ring{position:fixed;pointer-events:none;z-index:1000;border-radius:50%;mix-blend-mode:normal}.cursor{width:7px;height:7px;background:var(--acid)}.cursor-ring{width:38px;height:38px;border:1px solid var(--acid);transition:width .2s,height .2s,background .2s}.cursor-ring.big{width:78px;height:78px;background:var(--acid)}
+#loader{position:fixed;inset:0;background:var(--bg);z-index:2000;display:grid;place-items:center;transition:.8s ease}.loader-box{width:min(380px,70vw)}.loader-row{display:flex;justify-content:space-between;font:10px "DM Mono";color:#786b78;letter-spacing:.15em;margin-bottom:13px}.loader-line{height:1px;background:var(--line)}.loader-line i{display:block;height:100%;width:0;background:var(--acid)}
+nav{height:84px;background:rgba(247,241,232,.78);backdrop-filter:blur(14px);display:flex;align-items:center;justify-content:space-between;padding:0 32px;position:fixed;inset:0 0 auto;z-index:80;mix-blend-mode:normal}.logo{font-weight:800;font-size:17px;letter-spacing:-.07em}.logo span{color:var(--acid)}.links{display:flex;gap:28px;font:10px "DM Mono";letter-spacing:.16em;text-transform:uppercase}.links a{opacity:.75}.links a:hover{opacity:1;color:var(--acid)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none;filter:blur(2px);z-index:0}.hero:before{width:28vw;height:28vw;left:-12vw;bottom:-10vw;background:#ead7f4}.hero:after{width:18vw;height:18vw;right:4vw;top:15vh;background:#f0cfe1}.hero{min-height:100vh;position:relative;display:grid;place-items:center;padding:100px 7vw 60px;overflow:hidden}.hero-copy{position:relative;z-index:4;width:min(1200px,100%)}.micro{font:11px "DM Mono";letter-spacing:.18em;text-transform:uppercase;color:var(--acid);margin-bottom:25px}
+h1{font-size:clamp(76px,13.2vw,190px);line-height:.78;letter-spacing:-.09em;margin:0;max-width:1200px}h1 .serif{font-family:"Playfair Display";font-style:italic;font-weight:700;letter-spacing:-.08em}
+.hero-bottom{display:flex;justify-content:space-between;align-items:end;margin-top:65px;max-width:1080px}.hero-note{max-width:340px;color:#756878;font-size:14px;line-height:1.75}.hero-note strong{color:var(--ink)}.scrollcue{font:10px "DM Mono";letter-spacing:.15em;color:#777}
+#hero3d{position:absolute;inset:0;z-index:1}.hero-glow{position:absolute;width:45vw;height:45vw;border-radius:50%;background:radial-gradient(circle,#b879e544,transparent 68%);right:-12vw;top:8vw;filter:blur(5px);z-index:0}
+.marquee{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:16px 0;font:10px "DM Mono";letter-spacing:.18em;color:#9b8da0}.marquee-track{display:inline-block;animation:marquee 28s linear infinite}.marquee b{color:var(--acid);padding:0 28px}@keyframes marquee{to{transform:translateX(-50%)}}
+.wrap{max-width:1440px;margin:auto;padding:0 32px}section{padding:145px 0}.eyebrow{font:10px "DM Mono";letter-spacing:.17em;color:var(--acid);text-transform:uppercase}.section-top{display:flex;justify-content:space-between;align-items:end;margin-bottom:60px}.section-top h2{font-size:clamp(52px,8vw,108px);letter-spacing:-.075em;line-height:.83;margin:9px 0 0}.section-top p{width:320px;color:#8c8a84;font-size:13px;line-height:1.7}
+.work-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.work{position:relative;overflow:hidden;background:#eee5f1;border:1px solid #d8c8dd;cursor:pointer;min-height:620px;transform-style:preserve-3d;transition:transform .18s ease}.work:nth-child(1){grid-column:span 7}.work:nth-child(2){grid-column:span 5}.work:nth-child(3){grid-column:span 5}.work:nth-child(4){grid-column:span 7}.work:nth-child(n+5){grid-column:span 4;min-height:510px}
+.work-media{position:absolute;inset:0}.work-media img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.15,.75,.2,1),filter .6s;filter:saturate(.82) contrast(1.02)}.work:hover .work-media img{transform:scale(1.08);filter:saturate(1.08) contrast(1.04)}
+.work:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 28%,#2a1833cc 100%)}.work-info{position:absolute;left:25px;right:25px;bottom:23px;z-index:2}.work-no{font:10px "DM Mono";color:var(--acid)}.work-title{font-size:clamp(27px,3vw,48px);font-weight:800;letter-spacing:-.065em;margin:4px 0}.work-type{font:9px "DM Mono";color:#e7dce9;letter-spacing:.14em;text-transform:uppercase}.open-arrow{position:absolute;right:25px;top:25px;width:42px;height:42px;border:1px solid #ffffff88;border-radius:50%;display:grid;place-items:center;z-index:3;font-size:17px;transition:.3s}.work:hover .open-arrow{background:var(--acid);border-color:var(--acid);color:#000;transform:rotate(45deg)}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:90px}.about-big{font-size:clamp(38px,5.2vw,75px);line-height:1;letter-spacing:-.065em}.about-big em{font-family:"Playfair Display";font-style:italic}.about-copy{color:#756878;font-size:15px;line-height:1.9;max-width:520px}.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:55px}.stat{padding:25px 0;border-right:1px solid var(--line)}.stat:last-child{border-right:0;padding-left:20px}.stat b{font-size:37px;letter-spacing:-.07em}.stat span{display:block;color:#8c7c90;font:9px "DM Mono";text-transform:uppercase;margin-top:8px}
+.contact{min-height:85vh;display:flex;flex-direction:column;justify-content:center}.contact h2{font-size:clamp(58px,10vw,145px);line-height:.8;letter-spacing:-.09em;margin:15px 0 0}.contact h2 a{display:inline-block;border-bottom:2px solid var(--acid)}.contact h2 a:hover{color:var(--acid)}.contact-meta{display:flex;justify-content:space-between;margin-top:70px;color:#777;font:10px "DM Mono";letter-spacing:.13em}.pill{border:1px solid #9d76ad;padding:12px 16px;border-radius:99px}
+footer{border-top:1px solid var(--line);padding:25px 32px;display:flex;justify-content:space-between;color:#626262;font:9px "DM Mono";letter-spacing:.1em}
+
+/* immersive project viewer */
+.viewer{position:fixed;inset:0;background:#4b245e;z-index:500;visibility:hidden;opacity:0;transform:scale(.98);transition:.55s cubic-bezier(.2,.8,.2,1);overflow:hidden}.viewer.open{visibility:visible;opacity:1;transform:scale(1)}.viewer-stage{position:absolute;inset:0;overflow:auto}.viewer-top{position:fixed;top:0;left:0;right:0;height:86px;display:flex;align-items:center;justify-content:space-between;padding:0 30px;z-index:10;background:linear-gradient(#4b245edd,transparent)}.viewer-index{font:10px "DM Mono";color:#777;letter-spacing:.14em}.close{width:48px;height:48px;border:1px solid #b991c9;border-radius:50%;font-size:22px;transition:.25s}.close:hover{background:var(--acid);color:#000;border-color:var(--acid);transform:rotate(90deg)}
+.viewer-hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;padding:110px 7vw 70px}.viewer-copy h3{font-size:clamp(60px,9vw,140px);line-height:.78;letter-spacing:-.09em;margin:15px 0 30px}.viewer-copy p{max-width:450px;color:#e8dced;line-height:1.8;font-size:14px}.viewer-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}.viewer-tags span{font:9px "DM Mono";letter-spacing:.12em;text-transform:uppercase;border:1px solid #9d76ad;border-radius:99px;padding:9px 12px}.viewer-image{height:min(75vh,760px);position:relative;display:grid;place-items:center;perspective:1200px}.viewer-image img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 35px 70px #000);transform:rotateY(-5deg) rotateX(2deg);transition:transform 1s cubic-bezier(.2,.8,.2,1)}.viewer-image:hover img{transform:rotateY(0) rotateX(0) scale(1.025)}
+.viewer-detail{max-width:780px;padding:90px 7vw 150px;margin:auto}.viewer-detail .label{font:10px "DM Mono";color:var(--acid);letter-spacing:.15em}.viewer-detail p{font-size:clamp(25px,3.4vw,48px);line-height:1.1;letter-spacing:-.045em;color:#f4eaf5;margin:20px 0}.viewer-nav{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #8d6a99;padding:25px 7vw 55px}.viewer-nav button{font:10px "DM Mono";letter-spacing:.15em;text-transform:uppercase;color:#e8dced}.viewer-nav button:hover{color:var(--acid)}
+
+.reveal{opacity:0;transform:translateY(45px);transition:opacity .9s ease,transform 1s cubic-bezier(.15,.8,.2,1)}.reveal.in{opacity:1;transform:none}
+@media(max-width:850px){.links{gap:14px}.links a:nth-child(2){display:none}.wrap{padding:0 20px}section{padding:105px 0}.section-top{display:block}.section-top p{margin-top:25px}.work-grid{display:block}.work{min-height:510px!important;margin-bottom:14px}.about{grid-template-columns:1fr;gap:45px}.hero{padding:120px 20px 60px}.hero-bottom{display:block}.scrollcue{margin-top:35px}.contact-meta{display:block}.contact-meta>*{display:inline-block;margin:6px 10px 0 0}.viewer-hero{grid-template-columns:1fr;padding:105px 25px 45px;gap:25px}.viewer-image{height:52vh;order:-1}.viewer-copy h3{font-size:20vw}.viewer-detail{padding:70px 25px 100px}.viewer-nav{padding-inline:25px}.cursor,.cursor-ring{display:none}}
+</style>
+</head>
+<body>
+<div id="loader"><div class="loader-box"><div class="loader-row"><span>MOMINA KHAN</span><span id="loadpct">00%</span></div><div class="loader-line"><i id="loadbar"></i></div></div></div>
+<div class="noise"></div><div class="cursor"></div><div class="cursor-ring"></div>
+
+<nav><a class="logo" href="#">M<span>.</span>K</a><div class="links"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+  <div id="hero3d"></div><div class="hero-glow"></div>
+  <div class="hero-copy reveal">
+    <div class="micro">Graphic Designer / Visual Storyteller</div>
+    <h1>Design<br>with <span class="serif">intent.</span></h1>
+    <div class="hero-bottom"><p class="hero-note"><strong>Momina Khan</strong> — creating branding, packaging, retail and social visuals that turn a brief into something people can feel.</p><span class="scrollcue">SCROLL ↓</span></div>
+  </div>
+</header>
+
+<div class="marquee"><div class="marquee-track">BRANDING <b>✦</b> PACKAGING <b>✦</b> RETAIL <b>✦</b> SOCIAL CREATIVE <b>✦</b> AI-ASSISTED DESIGN <b>✦</b> VISUAL STORYTELLING <b>✦</b> BRANDING <b>✦</b> PACKAGING <b>✦</b> RETAIL <b>✦</b> SOCIAL CREATIVE <b>✦</b></div></div>
+
+<main>
+<section id="work"><div class="wrap">
+  <div class="section-top reveal"><div><div class="eyebrow">01 / SELECTED WORK</div><h2>Made to<br><span class="serif">be seen.</span></h2></div><p>Eight projects spanning physical packaging, brand environments and digital promotional design. Click any piece for the full-screen case-study viewer.</p></div>
+  <div class="work-grid" id="workGrid"></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="section-top reveal"><div><div class="eyebrow">02 / APPROACH</div><h2>Make it<br><span class="serif">matter.</span></h2></div></div>
+  <div class="about"><div class="about-big reveal">Good design isn't decoration. It is <em>clarity</em> with personality.</div>
+  <div class="about-copy reveal">My portfolio spans packaging, product branding, retail environments and social creatives. I enjoy taking a simple brief and shaping a visual language around it — one that feels intentional, premium and easy to remember.
+    <div class="stats"><div class="stat"><b>08</b><span>Works shown</span></div><div class="stat"><b>04+</b><span>Design areas</span></div><div class="stat"><b>∞</b><span>Ideas</span></div></div>
+  </div></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <div class="eyebrow reveal">03 / START A PROJECT</div><h2 class="reveal">Let's make<br><a href="mailto:hello@example.com">something.</a></h2>
+  <div class="contact-meta reveal"><span>AVAILABLE FOR SELECT PROJECTS</span><span class="pill">MOMINA KHAN © 2026</span></div>
+</div></section>
+</main>
+<footer><span>GRAPHIC DESIGN / BRANDING / PACKAGING / SOCIAL</span><span>BUILT WITH INTENTION.</span></footer>
+
+<div class="viewer" id="viewer" aria-hidden="true">
+  <div class="viewer-stage">
+    <div class="viewer-top"><span class="viewer-index" id="vIndex">01 / 08</span><button class="close" id="closeViewer" aria-label="Close project">×</button></div>
+    <div class="viewer-hero">
+      <div class="viewer-copy">
+        <div class="eyebrow" id="vType"></div><h3 id="vTitle"></h3><p id="vIntro"></p><div class="viewer-tags" id="vTags"></div>
+      </div>
+      <div class="viewer-image"><img id="vImage" src="" alt=""></div>
+    </div>
+    <div class="viewer-detail"><div class="label">PROJECT NOTE</div><p id="vDetail"></p></div>
+    <div class="viewer-nav"><button id="prev">← Previous</button><button id="next">Next →</button></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const projects = [{"id": "polycab", "num": "01", "title": "Polycab", "category": "Bottle Branding / Retail", "year": "2026", "page": "assets/work-04.jpg", "intro": "A premium retail direction built around simplicity, strong recognition and a clean red-and-white visual language.", "details": "Paper bag mockup design for Polycab India Limited. The supplied portfolio describes a white base for simplicity and elegance, with a bold red logo used for strong brand visibility.", "tags": ["Branding", "Packaging", "Retail"]}, {"id": "cots", "num": "02", "title": "Cots & Cuddles", "category": "Toy Packaging", "year": "2026", "page": "assets/work-03.jpg", "intro": "Packaging designed to make a children's product feel playful, engaging and instantly approachable.", "details": "A freelance toy-packaging project targeting children aged 3+, focused on creating an engaging and visually appealing box design.", "tags": ["Packaging", "Kids", "Product"]}, {"id": "glenmark", "num": "03", "title": "Glenmark", "category": "Product Packaging & Supply", "year": "2026", "page": "assets/work-05.jpg", "intro": "Packaging work extending beyond the visual design into production and final packaged-product delivery.", "details": "The portfolio describes product packaging created for a client under Glenmark, with production and supply of the final packaged product also managed.", "tags": ["Packaging", "Production", "Product"]}, {"id": "gift-tech", "num": "04", "title": "Gift Tech Mumbai", "category": "Retail / Brand Promotion", "year": "2026", "page": "assets/work-06.jpg", "intro": "A retail environment built around clean signage, warm light, white-and-wood finishes and minimal luxury.", "details": "The supplied portfolio describes the Gift Tech stall with clean signage, a bright white and wood interior, soft warm lighting and a minimal luxury design.", "tags": ["Retail", "Branding", "Environment"]}, {"id": "acne-care", "num": "05", "title": "Acne Care", "category": "Tube + Box Packaging", "year": "2026", "page": "assets/work-07.jpg", "intro": "A packaging system designed to act as a visual brand storyteller in a crowded personal-care category.", "details": "Tube and box packaging design described in the portfolio as a brand-building tool focused on visual appeal, experience and functional sustainability.", "tags": ["Packaging", "Beauty", "Branding"]}, {"id": "nutlers", "num": "06", "title": "Nutlers", "category": "AI-Assisted Social Creative", "year": "2026", "page": "assets/work-08.jpg", "intro": "Product-led social visuals combining AI-assisted image creation with graphic design and promotional storytelling.", "details": "Premium promotional posts for Nutlers Peanut Butter, using AI tools and graphic design with emphasis on product styling, creative storytelling and ad-ready social visuals.", "tags": ["AI Creative", "Social", "Advertising"]}, {"id": "dhanak", "num": "07", "title": "Dhanak Pay", "category": "Brand / Social Creative", "year": "2026", "page": "assets/work-09.jpg", "intro": "A digital brand-communication direction presented as part of the portfolio's social and promotional work.", "details": "The portfolio lists Dhanak Pay as Work 08. The supplied page contains the project heading but limited additional descriptive copy.", "tags": ["Social", "Branding", "Digital"]}, {"id": "social", "num": "08", "title": "Social Designs", "category": "Functional Social Design", "year": "2026", "page": "assets/work-10.jpg", "intro": "Flexible social visuals designed around the communication needs of a brand, with awareness and visual impact in mind.", "details": "The portfolio describes functional design styled to client needs and intended to build awareness through strong visual material.", "tags": ["Social", "Campaigns", "Visuals"]}];
+
+const grid=document.getElementById('workGrid');
+projects.forEach((p,i)=>{
+  const el=document.createElement('article'); el.className='work reveal';
+  el.innerHTML=`<div class="work-media"><img src="${p.page}" alt="${p.title} — ${p.category}" loading="${i<4?'eager':'lazy'}"></div><div class="open-arrow">↗</div><div class="work-info"><div class="work-no">${p.num}</div><div class="work-title">${p.title}</div><div class="work-type">${p.category} / ${p.year}</div></div>`;
+  el.addEventListener('click',()=>openProject(i));
+  grid.appendChild(el);
+});
+
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+const cursor=document.querySelector('.cursor'), ring=document.querySelector('.cursor-ring'); let mx=0,my=0,rx=0,ry=0;
+addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY});
+(function tick(){rx+=(mx-rx)*.22;ry+=(my-ry)*.22;cursor.style.transform=`translate(${mx-3}px,${my-3}px)`;ring.style.transform=`translate(${rx-19}px,${ry-19}px)`;requestAnimationFrame(tick)})();
+document.querySelectorAll('a,button,.work').forEach(x=>{x.addEventListener('mouseenter',()=>ring.classList.add('big'));x.addEventListener('mouseleave',()=>ring.classList.remove('big'))});
+
+document.querySelectorAll('.work').forEach(card=>{
+ card.addEventListener('pointermove',e=>{if(innerWidth<850)return;const r=card.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(1100px) rotateX(${py*-4}deg) rotateY(${px*4}deg) translateZ(5px)`});
+ card.addEventListener('pointerleave',()=>card.style.transform='');
+});
+
+// Three.js hero object — procedural, no external model required.
+const mount=document.getElementById('hero3d'),scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(45,innerWidth/innerHeight,.1,100);
+camera.position.z=5.5;
+const renderer=new THREE.WebGLRenderer({alpha:true,antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setSize(innerWidth,innerHeight);mount.appendChild(renderer.domElement);
+const group=new THREE.Group();scene.add(group);
+const geo=new THREE.IcosahedronGeometry(1.35,2);
+const mat=new THREE.MeshStandardMaterial({color:0x8d4bd4,roughness:.18,metalness:.65,wireframe:false});
+const orb=new THREE.Mesh(geo,mat);group.add(orb);
+const wire=new THREE.Mesh(new THREE.IcosahedronGeometry(1.52,1),new THREE.MeshBasicMaterial({color:0x8d4bd4,wireframe:true,transparent:true,opacity:.2}));group.add(wire);
+const torus=new THREE.Mesh(new THREE.TorusGeometry(2.05,.008,16,180),new THREE.MeshBasicMaterial({color:0xf7f1e8,transparent:true,opacity:.22}));torus.rotation.x=1.1;group.add(torus);
+const light=new THREE.PointLight(0xd8ff38,22,12);light.position.set(3,3,4);scene.add(light);
+scene.add(new THREE.AmbientLight(0xffffff,.35));
+function animate(){requestAnimationFrame(animate);group.rotation.y+=.003;group.rotation.x=Math.sin(Date.now()*.00045)*.08;orb.rotation.z+=.002;wire.rotation.y-=.004;torus.rotation.z+=.003;renderer.render(scene,camera)}animate();
+addEventListener('resize',()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
+
+// Viewer
+const viewer=document.getElementById('viewer'), vTitle=document.getElementById('vTitle'),vType=document.getElementById('vType'),vIntro=document.getElementById('vIntro'),vDetail=document.getElementById('vDetail'),vImage=document.getElementById('vImage'),vTags=document.getElementById('vTags'),vIndex=document.getElementById('vIndex');
+let current=0;
+function openProject(i){current=i;renderProject();viewer.classList.add('open');viewer.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');viewer.querySelector('.viewer-stage').scrollTop=0}
+function renderProject(){const p=projects[current];vIndex.textContent=`${p.num} / ${String(projects.length).padStart(2,'0')}`;vType.textContent=p.category;vTitle.textContent=p.title;vIntro.textContent=p.intro;vDetail.textContent=p.details;vImage.src=p.page;vImage.alt=p.title;vTags.innerHTML=p.tags.map(t=>`<span>${t}</span>`).join('')}
+function closeProject(){viewer.classList.remove('open');viewer.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open')}
+document.getElementById('closeViewer').onclick=closeProject;
+document.getElementById('next').onclick=()=>{current=(current+1)%projects.length;renderProject();viewer.querySelector('.viewer-stage').scrollTop=0};
+document.getElementById('prev').onclick=()=>{current=(current-1+projects.length)%projects.length;renderProject();viewer.querySelector('.viewer-stage').scrollTop=0};
+addEventListener('keydown',e=>{if(!viewer.classList.contains('open'))return;if(e.key==='Escape')closeProject();if(e.key==='ArrowRight')document.getElementById('next').click();if(e.key==='ArrowLeft')document.getElementById('prev').click()});
+
+// Loader
+let n=0;const bar=document.getElementById('loadbar'),pct=document.getElementById('loadpct');
+const timer=setInterval(()=>{n+=Math.floor(Math.random()*14)+8;if(n>=100){n=100;clearInterval(timer);setTimeout(()=>document.getElementById('loader').style.opacity='0',250);setTimeout(()=>document.getElementById('loader').remove(),1100)}bar.style.width=n+'%';pct.textContent=String(n).padStart(2,'0')+'%'},80);
+</script>
+</body>
+</html>
